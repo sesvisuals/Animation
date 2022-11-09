@@ -1,0 +1,112 @@
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 400px;
+  background-color: darkslategrey;
+  margin: auto;
+}
+.square:hover .upLeft  { 
+  animation: right-to-left 1s ease-in forwards;
+}
+.square:hover .upRight {
+  animation: left-to-right 1s ease-in forwards;
+}
+.square:hover .lowLeft  { 
+  animation: right-to-left 1s ease-in forwards;
+}
+.square:hover .lowRight {
+  animation: left-to-right 1s ease-in forwards;
+}
+@keyframes right-to-left {
+  100% {
+    transform: translateX(-100%);
+}
+}
+@keyframes left-to-right {
+  100% {
+    transform: translateX(100%);
+}
+
+}
+.upLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  background-color: darkblue;
+  transition: transform 1s ease-in;
+  position: relative;
+  top: -34px;
+  left: 47px;
+}
+
+.lowLeft {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: darkblue;
+    transition: transform 1s ease-in;
+    position: relative;
+    top: 34px;
+    left: -7px;
+  }
+h1 {
+  color: white;
+}
+H4 {
+  COLOR: WHITE;
+}
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 50%;
+    /* display: inline-block; */
+    z-index: 1;
+    position: absolute;
+  }
+  .dot:hover {
+    border: 2px solid orangered;
+  }
+  
+ .upRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  background-color: darkblue;
+  transition: transform 1s ease-in;
+  position: relative;
+  top: -34px;
+  left: 7px;
+}
+  
+  .lowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: darkblue;
+    transition: transform 1s ease-in;
+    position: relative;
+    top: 34px;
+    left: -47px;
+  }
+
+  
